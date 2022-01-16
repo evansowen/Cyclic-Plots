@@ -5,7 +5,7 @@ library(readr)
 library(ggpmisc)
 library(broom)
 
-df <- read.csv("22010196 3.3mm Cyclic.csv")
+df <- read.csv("Cyclic.csv")
 Displacement1 <- 1.25
 Displacement2 <- 2.75
 df$index <- seq(1, nrow(df), by = 1)
@@ -51,7 +51,7 @@ for (i in 1:(no.cycles-1)) {
 }
 
 # Parsed Datafile with separated cycles
-write.xlsx(mylist, file = "ATB1000M_3.3_Rapid_Parsed.xlsx")
+write.xlsx(mylist, file = "Rapid_Parsed.xlsx")
 
 # Plotting Function
 myplot<- function (mydf, mylabel) {
@@ -92,7 +92,7 @@ for (k in 1:(no.cycles-1)) {
 }
 
 library(gifski)
-png_files <- list.files("~/Desktop/ATB1000M_3.3M_RAPID", 
+png_files <- list.files("~/Desktop/RAPID", 
                         pattern = "*.png$", full.names = TRUE)
 library(gtools)
 png_files <- mixedsort(png_files)
