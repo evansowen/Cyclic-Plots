@@ -53,7 +53,7 @@ for (i in 1:(no.cycles-1)) {
 }
 
 # Parsed Datafile with separated cycles
-write.xlsx(mylist, file = "ATB1000_44_Rapid_Parsed.xlsx")
+write.xlsx(mylist, file = "XXX.xlsx")
 
 # Plotting Function
 myplot<- function (mydf, mylabel) {
@@ -94,7 +94,7 @@ for (k in 1:((no.cycles-1)/5)) {
 }
 
 library(gifski)
-png_files <- list.files("~/Desktop/ATB1000M_4MM_RAPID/Plots", 
+png_files <- list.files("~/Desktop/XXX/Plots", 
                         pattern = "*.png$", full.names = TRUE)
 library(gtools)
 png_files <- mixedsort(png_files)
